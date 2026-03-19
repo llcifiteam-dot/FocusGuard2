@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="20dp"
+    android:layout_margin="32dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Override Block?" android:textSize="18sp" android:textStyle="bold"
+        android:textColor="@color/red" android:layout_marginBottom="12dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="This will be recorded. The AI will note that you overrode this block and may adjust rules.\n\nAre you sure you need access?"
+        android:textSize="13sp" android:textColor="@color/muted" android:lineSpacingMultiplier="1.5" android:layout_marginBottom="20dp"/>
+    <Button android:id="@+id/btn_cancel"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="Stay Focused" android:textColor="@color/white"
+        android:background="@drawable/btn_blue" android:layout_marginBottom="10dp"/>
+    <Button android:id="@+id/btn_override_confirm"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="Override" android:textColor="@color/red"
+        android:background="@drawable/btn_danger"/>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5060d1a">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/card_bg_red"
+        android:padding="28dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚫"
+            android:textSize="56sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISTRACTION BLOCKED"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ff4d6d"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#d0deff"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ff4d6d"
+            android:textStyle="bold"
+            android:background="@drawable/score_chip"
+            android:padding="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#5a6a8a"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#00e87a"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/timer_bg"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Block expires in"
+                android:textSize="12sp"
+                android:textColor="#5a6a8a"/>
+            <TextView android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:00"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#d0deff"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_override"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="I really need access"
+            android:textSize="13sp"
+            android:textColor="#5a6a8a"
+            android:background="@drawable/btn_outline"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overrides are tracked and affect AI learning"
+            android:textSize="9sp"
+            android:textColor="#2a3550"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

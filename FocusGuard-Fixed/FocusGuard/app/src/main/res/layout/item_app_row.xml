@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textStyle="bold" android:textColor="@color/text"/>
+        <ProgressBar android:id="@+id/progress_app"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent" android:layout_height="4dp"
+            android:max="100" android:progressTint="@color/red"
+            android:progressBackgroundTint="@color/border" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="60dp" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center" android:layout_marginStart="10dp">
+        <TextView android:id="@+id/tv_app_score"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="18sp" android:textStyle="bold" android:textColor="@color/red"/>
+        <TextView android:id="@+id/tv_app_count"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="9sp" android:textColor="@color/muted"/>
+    </LinearLayout>
+</LinearLayout>
